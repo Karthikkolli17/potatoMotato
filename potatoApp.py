@@ -25,6 +25,9 @@ with st.spinner('Model is being loaded..'):
 
 st.write("""
          # The Potato Leaf can be classified as:
+         ### Early Blight
+         ### Healthy
+         ### Late Blight
          """
          )
 # st.write(
