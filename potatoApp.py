@@ -9,10 +9,9 @@ st.set_page_config(
 )
 
 hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
+            <div style="background:#000000 ;padding:10px">
+                <h2 style="color:white;text-align:center;"> Potato Leaf Disease Detection</h2>
+            </div>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.set_option('deprecation.showfileUploaderEncoding', False)
@@ -25,9 +24,16 @@ with st.spinner('Model is being loaded..'):
     model=load_model()
 
 st.write("""
-         # Potato Disease Classification
+         # The Potato Leaf can be classified as:
          """
          )
+st.write(
+    """
+    ### Early Blight
+    ### Healthy
+    ### Late Blight
+        """
+)
 
 def is_image(file):
     try:
