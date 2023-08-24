@@ -27,13 +27,13 @@ st.write("""
          # The Potato Leaf can be classified as:
          """
          )
-st.write(
-    """
-    ### Early Blight
-    ### Healthy
-    ### Late Blight
-        """
-)
+# st.write(
+#     """
+#     ### Early Blight
+#     ### Healthy
+#     ### Late Blight
+#         """
+# )
 
 def is_image(file):
     try:
